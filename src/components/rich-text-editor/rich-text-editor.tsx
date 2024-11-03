@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/select";
 import { useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { InfoCircledIcon } from "@radix-ui/react-icons";
 import "./rich-text-editor.css";
 
 const RichTextEditor = ({
