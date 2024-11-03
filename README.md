@@ -134,6 +134,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
-
-Project Link: [https://github.com/yourusername/your-repo-name](https://github.com/yourusername/your-repo-name)
+Sandeep Machiraju - [LinkedIn](https://www.linkedin.com/in/sandepmachiraju/) - machirajusaisandeep@gmail.com
