@@ -1,0 +1,160 @@
+.rich-text-editor {
+  flex: 1 1 auto; /* Allows the editor to grow and shrink, but prioritizes growing */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  width: 100%; /* Prevent horizontal scrolling */
+  max-width: none;
+  outline: none;
+  padding: 0.5rem;
+}
+.rich-text-editor {
+  --highlight-color: transparent;
+}
+.rich-text-editor:focus-within {
+  --highlight-color: #ffff99;
+}
+.rich-text-editor > * + * {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.rich-text-editor h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.rich-text-editor h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.rich-text-editor h3,
+.rich-text-editor h4,
+.rich-text-editor h5,
+.rich-text-editor h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.rich-text-editor p {
+  margin-bottom: 1.25rem;
+}
+.rich-text-editor a {
+  color: var(--color-primary);
+}
+.rich-text-editor hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top-width: 1px;
+  border-color: var(--color-divider);
+}
+.rich-text-editor img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+}
+.rich-text-editor ul,
+.rich-text-editor ol {
+  padding-left: 1.25rem;
+}
+.rich-text-editor ul {
+  list-style-type: disc;
+}
+.rich-text-editor ul li {
+  padding-left: 0;
+}
+.rich-text-editor li {
+  line-height: 2;
+}
+.rich-text-editor li > p {
+  margin: 0;
+  display: inline-block;
+}
+.rich-text-editor ul,
+.rich-text-editor ol {
+  padding-left: 1.5em;
+  margin-left: 0;
+  list-style-position: outside;
+}
+.rich-text-editor ul {
+  list-style-type: disc;
+}
+.rich-text-editor ol {
+  list-style-type: decimal;
+}
+.rich-text-editor li {
+  display: list-item;
+  margin-left: 0;
+  padding-left: 0.5em;
+}
+.rich-text-editor li > p {
+  display: inline;
+  margin: 0;
+}
+.rich-text-editor blockquote {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  font-family: serif;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  color: #4b5563;
+  border-left-width: 8px;
+  border-color: #e5e7eb;
+  background-color: #f9fafb;
+}
+.rich-text-editor blockquote p {
+  margin: 0;
+}
+.rich-text-editor blockquote::before {
+  content: '"';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  font-size: 2.25rem;
+  color: #d1d5db;
+}
+.rich-text-editor code {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  color: #4b5563;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  background-color: #f3f4f6;
+}
+.rich-text-editor pre {
+  overflow-x: auto;
+  color: white;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: #111827;
+}
+.rich-text-editor pre code {
+  font-size: 0.875rem;
+}
+.spell-error {
+  border-bottom: 2px solid red;
+  cursor: pointer;
+}
+.bubble-menu {
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.rich-text-editor .highlight {
+  cursor: pointer;
+}
+.highlight-transition {
+  transition: background-color 3s ease;
+  background-color: transparent;
+}
+.highlight-transition[style*="background-color"] {
+  background-color: #ffff99 !important;
+}
+.rich-text-editor:focus-within .ProseMirror-focused mark[style] {
+  background-size: 100% 100% !important;
+}
